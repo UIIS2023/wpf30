@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFTERETANA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTERETANA"
+        mc:Ignorable="d"
+        Title="Teretana" Height="400" Width="670">
+    <Grid>
+        <DataGrid Name="dataGridCentralni" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" IsReadOnly="True"
+            AlternatingRowBackground="Aqua" CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"/>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Top" Width="auto" Orientation="Horizontal">
+            <Button x:Name="btnKlijent" Content="Klijent" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnKlijent_Click"/>
+            <Button x:Name="btnKupovina" Content="Kupovina" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnKupovina_Click"/>
+            <Button x:Name="btnVrsta" Content="Vrsta" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnVrsta_Click" />
+            <Button x:Name="btnRoba" Content="Roba" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnRoba_Click"/>
+            <Button x:Name="btnDobavljac" Content="Dobavljac" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnDobavljac_Click"/>
+            <Button x:Name="btnGarancija" Content="Garancija" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnGarancija_Click" />
+            <Button x:Name="btnReklamacija" Content="Reklamacija" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnReklamacija_Click" />
+            <Button x:Name="btnClanarina" Content="Clanarina" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="80" Click="btnClanarina_Click" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30"  VerticalAlignment="Bottom" Width="510" Orientation="Horizontal">
+            <Button x:Name="btnDodaj" Content="Dodaj" Width="170" Click="btnDodaj_Click"/>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Width="170" Click="btnIzmeni_Click" />
+            <Button x:Name="btnObrisi" Content="Obriši" Width="170" Click="btnObrisi_Click_1" />
+        </StackPanel>
+    </Grid>
+</Window>

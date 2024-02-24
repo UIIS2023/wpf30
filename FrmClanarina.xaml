@@ -1,0 +1,25 @@
+﻿<Window x:Class="WPFTERETANA.FrmClanarina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTERETANA"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni Clanarinu" Height="320" Width="300">
+    <Grid>
+        <Label Content="ID Clanarine:" HorizontalAlignment="Left" Margin="30,25,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIDClanarine" HorizontalAlignment="Left" Height="23" Margin="122,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="30,243,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.498,2.783" Click="btnSacuvaj_Click"/>
+        <Button x:Name="btnOtkazi" Content="Otkaži" HorizontalAlignment="Left" Margin="174,243,0,0" VerticalAlignment="Top" Width="75" Click="btnOtkazi_Click"/>
+        <Label Content="Opis:" HorizontalAlignment="Left" Margin="30,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cena:" HorizontalAlignment="Left" Margin="30,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="VrstaTrng:" HorizontalAlignment="Left" Margin="27,116,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtOpisClanarine" HorizontalAlignment="Left" Height="23" Margin="122,57,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCenaClanarine" HorizontalAlignment="Left" Height="23" Margin="122,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtVrstaTrng" HorizontalAlignment="Left" Height="23" Margin="122,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Trajanje:" HorizontalAlignment="Left" Margin="30,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="VrstaID:" HorizontalAlignment="Left" Margin="30,178,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTrajanjeClanarine" HorizontalAlignment="Left" Height="23" Margin="122,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbVrstaClanarineID" HorizontalAlignment="Left" Margin="121,181,0,0" VerticalAlignment="Top" Width="120" SelectedValuePath="VrstaID"/>
+    </Grid>
+</Window>
